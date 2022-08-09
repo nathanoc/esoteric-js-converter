@@ -6,20 +6,24 @@
 
         <script src="converter.js"></script>
         <script src="conversions.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <h1>JS to Esoteric JS Converter</h1>
+        <div id="content">
+            <h1>JS to Esoteric JS Converter</h1>
 
-        <label for="input">Enter string or code here:</label>
-        <br>
-        <textarea id="input" style="width: 400px; height: 100px;"></textarea>
-        <br>
-        <input id="evalSource" type="checkbox">
-        <label for="evalSource">Eval source (leave unchecked if just entering plaintext, checked if entering code)</label>
-        <br>
-        <button onclick="convert()">Convert</button>
+            <label for="input">Enter string or code here:</label>
+            <br>
+            <textarea id="input"></textarea>
+            <br>
+            <input id="evalSource" type="checkbox">
+            <label for="evalSource">Eval source (leave unchecked if just entering plaintext, checked if entering code)</label>
+            <br>
+            <button onclick="convert()">Convert</button>
 
-        <p id="output"></p>
+            <p id="output"></p>
+        </div>
     </body>
 </html>
