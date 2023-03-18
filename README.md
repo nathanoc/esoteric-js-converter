@@ -1,6 +1,6 @@
 # non-alphanumeric-js-converter
 
-Non-Alphanumeric Javascript is defined for the sake of this document as valid Javascript code written entirely using the characters `![]()+`.
+This converts strings and Javascript code into valid Javascript that uses only the characters `![]()+`
 
 ## TL;DR
 
