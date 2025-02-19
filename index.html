@@ -12,18 +12,22 @@
 
     <body>
         <div id="content">
-            <h1>JS to Esoteric JS Converter</h1>
+            <h1>JS to ![]()+ Converter</h1>
 
             <label for="input">Enter string or code here:</label>
             <br>
             <textarea id="input"></textarea>
             <br>
-            <input id="evalSource" type="checkbox">
-            <label for="evalSource">Eval source (leave unchecked if just entering plaintext, checked if entering code)</label>
+            <input checked id="evalSource" type="checkbox">
+            <label for="evalSource">Is code</label>
             <br>
             <button onclick="convert()">Convert</button>
 
-            <p id="output"></p>
+            <hr>
+            <label for="output">Output</label>
+            <br>
+            <textarea readonly id="output"></textarea>
+            <p>Try it in the browser console!</p>
         </div>
     </body>
 </html>

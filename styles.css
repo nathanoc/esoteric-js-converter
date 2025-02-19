@@ -85,3 +85,12 @@ button {
 
     margin: 10px;
 }
+
+#output {
+    resize: vertical;
+
+    width: 80%;
+    height: 200px;
+
+    margin: 10px;
+}
