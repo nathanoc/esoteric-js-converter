@@ -1,10 +1,10 @@
 # non-alphanumeric-js-converter
 
-This converts strings and Javascript code into valid JavaScript that uses only the characters `![]()+`
+This converts strings and JavaScript code into valid JavaScript that uses only the characters `![]()+`
 
 ## TL;DR
 
-Non-Alphanumeric Javascript works by exploiting JavaScript's strange casting rules to form strings and numbers, from which we can eventually access the `Function` constructor. By concatenating characters into strings representing code, and passing that code into the `Function` constructor, we are able to produce a function with any Javascript code as its body; this function can be executed by adding `()` at the end of the program. Using `\uXXXX` syntax we can access any Unicode character; it is therefore possible to rewrite absolutely any JavaScript program non-alphanumerically.
+Non-alphanumeric JavaScript works by exploiting JavaScript's strange casting rules to form strings and numbers, from which we can eventually access the `Function` constructor. By concatenating characters into strings representing code, and passing that code into the `Function` constructor, we are able to produce a function with any Javascript code as its body; this function can be executed by adding `()` at the end of the program. Using `\uXXXX` syntax we can access any Unicode character; it is therefore possible to rewrite absolutely any JavaScript program non-alphanumerically.
 
 ## Beginnings
 
