@@ -1,14 +1,14 @@
 # non-alphanumeric-js-converter
 
-This converts strings and Javascript code into valid Javascript that uses only the characters `![]()+`
+This converts strings and Javascript code into valid JavaScript that uses only the characters `![]()+`
 
 ## TL;DR
 
-Non-Alphanumeric Javascript works by exploiting certain egregious features of the language, to form strings and numbers that eventually allow us to access the `Function` constructor. By slowly concatenating strings into code, and passing that code as a string into the constructor, we are able to produce a function with any Javascript code; this function can be run simply by adding `()` at the end of the program. Using `\uXXXX` syntax we can access any Unicode character; it is therefore possible to rewrite absolutely any Javascript program in Non-Alphanumeric Javascript.
+Non-Alphanumeric Javascript works by exploiting JavaScript's strange casting rules to form strings and numbers, from which we can eventually access the `Function` constructor. By concatenating characters into strings representing code, and passing that code into the `Function` constructor, we are able to produce a function with any Javascript code as its body; this function can be executed by adding `()` at the end of the program. Using `\uXXXX` syntax we can access any Unicode character; it is therefore possible to rewrite absolutely any JavaScript program non-alphanumerically.
 
 ## Beginnings
 
-Non-Alphanumeric Javascript is largely built on the following foundational principles:
+Non-alphanumeric JavaScript is largely built on the following foundational principles:
 
 - Applying the not operator to an empty array returns false as arrays are truthy. `!![]` therefore returns true.
 - Adding an empty array to a value casts it to a string - for example, `!![]+[]` returns `"true"`.
@@ -18,3 +18,5 @@ With the help of grouping expressions with brackets, we can begin to form string
 
 - `(!![]+[])[+![]]` accesses the 0th index of the string `"true"`, returning `"t"`.
 - `(![]+[])[+!![]+!![]+!![]]` accesses the 3rd index of the string "false", returning "s".
+
+(To be continued)
