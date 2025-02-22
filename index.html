@@ -6,13 +6,14 @@
 
         <script src="converter.js"></script>
         <script src="conversions.js"></script>
+        <script src="buttons.js"></script>
 
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <div id="content">
-            <h1>JS to ![]()+ Converter</h1>
+            <h1>JS to ![]()+ converter</h1>
 
             <label for="input">Enter string or code here:</label>
             <br>
@@ -28,6 +29,8 @@
             <br>
             <textarea readonly id="output"></textarea>
             <p>Try it in the browser console!</p>
+            <button onclick="eval(document.getElementById('output').innerHTML)">Run</button>
+            <button id="copybutton" onclick="copyOutput()">Copy</button>
         </div>
     </body>
 </html>
